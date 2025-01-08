@@ -19,9 +19,12 @@ function gridCreation(answer){
         // default: 816x816px, cell is 50x50px with 1px margin
         for (let i = 0; i < answer; i++){
             const node = document.createElement('div');
-            node.setAttribute('style', 'width: 50px; height: 50px; background: black');
+            node.style.width = 816/answer + "px";
+            node.style.height = 816/answer + "px";
+            node.style.backgroundColor = 'black';
             node.style.margin = '1px';
             col.appendChild(node);
+            
     
             //  color change 
             node.addEventListener('mouseover', function(e){
@@ -49,6 +52,7 @@ gridsize.addEventListener("click", function (e){
     gridClear();
     gridCreation(answer);
 });
+
 
 
 gridCreation();
