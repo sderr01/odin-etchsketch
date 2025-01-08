@@ -16,15 +16,23 @@ const container = document.querySelector('.container');
 //     e.target.style.background = 'pink';
 // });
 
-// adding new node per row
+
 for(let j=0; j<16; j++){
     const col = document.createElement('div');
     
+    // adding new node per col
     for (let i = 0; i < 16; i++){
         const node = document.createElement('div');
         node.setAttribute('style', 'width: 50px; height: 50px; background: blue');
         node.style.margin = '1px';
         col.appendChild(node);
     }
+
+    //adding column to container
     container.appendChild(col);
 }
+
+
+container.addEventListener('mouseover', function(e){
+    e.target.style.background = 'pink';
+});
