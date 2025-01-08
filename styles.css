@@ -1,5 +1,7 @@
 .container {
-    width: 500px;
-    height: 500px;
+    width: 816px;
+    height: 816px;
     background: rgb(240, 240, 240);
+    display: flex;
+    
 }
