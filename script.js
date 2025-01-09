@@ -47,11 +47,17 @@ function gridClear(){
 const gridsize = document.getElementById("gridsize");
 
 // clears grid then creates new grid with user input
-gridsize.addEventListener("click", function (e){
+gridsize.addEventListener("click", function (){
     answer = prompt("grid");
     gridClear();
     gridCreation(answer);
 });
+
+const clearbtn = document.getElementById("clearBtn");
+clearbtn.addEventListener("click", function (){
+    gridClear();
+    gridCreation(answer);
+})
 
 
 

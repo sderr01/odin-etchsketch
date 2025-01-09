@@ -6,3 +6,21 @@
     margin-bottom: 40px;
     
 }
+
+button {
+    border: none;
+    padding: 10px;
+    box-shadow: 2px 2px 5px rgb(131, 129, 129);
+    margin: 15px 10px;
+    border-radius: 5px;
+}
+button:hover {
+    cursor: pointer;
+    background: rgb(196, 210, 230);
+    transition: .3s;
+}
+h1{
+    text-align: center;
+    margin: 15px;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
